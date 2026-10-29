@@ -1,0 +1,583 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&family=Pacifico&display=swap');
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+.site-nav {
+    background-image:url("banner.jpg");
+    padding: 14px 0;
+    
+}
+
+.brand {
+    color:orange !important;
+    font-size:2rem;
+    font-weight: 900;
+}
+
+.brand i {
+    font-size: 1.5rem;
+}
+
+.site-nav .nav-link {
+    color:whitesmoke;
+    font-weight: 800;
+    padding: 12px 16px !important;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.site-nav .nav-link:hover,
+.site-nav .nav-link:focus {
+    color:orange;
+}
+
+.site-nav .navbar-toggler {
+    border-color:orange;
+}
+
+.site-nav .navbar-toggler:focus {
+    box-shadow: 0 0 0 0.15rem orange;
+}
+
+
+.btn-orange {
+    background:orange;
+    color:white;
+    border: 2px solid orange;
+    border-radius: 2px;
+    padding: 12px 25px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.btn-orange:hover,
+.btn-orange:focus {
+    background: orange-dark;
+    border-color: orange-dark;
+    color: white;
+}
+
+.hero-section {
+    color:;
+    background:
+        url("banner.jpg")center/cover no-repeat;
+
+    padding: clamp(55px, 8vw, 105px) 0;
+    min-height: 580px;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-copy {
+    max-width: 650px;
+}
+
+.eyebrow {
+    color: orange;
+    font-family: "Pacifico", cursive;
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+}
+
+.hero-section h1 {
+    font-size: clamp(2.7rem, 5vw, 4.8rem);
+    line-height: 1.08;
+    font-weight: 900;
+    margin-bottom: 24px;
+    color:white;
+}
+
+.hero-section h1 span,
+.section-heading span {
+    color: orange;
+}
+
+.hero-section p:not(.eyebrow) {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    max-width: 600px;
+    color: #f0f0f0;
+}
+
+.hero-food {
+    width: min(100%, 450px);
+    aspect-ratio: 1;
+    object-fit: contain;
+}
+
+.rotating-image {
+    animation: rotate-food 45s linear infinite;
+}
+
+
+
+
+@keyframes rotate-food {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.section-space {
+    padding: clamp(55px, 7vw, 90px) 0;
+}
+
+.bg-light-warm {
+    background:cream;
+}
+
+.section-heading {
+    font-size: clamp(2rem, 3.6vw, 3rem);
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+
+.section-intro {
+    max-width: 600px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.feature-card {
+    height: 100%;
+    background: #fff;
+    padding: 30px 25px;
+    box-shadow: 0 4px 22px #2026420d;
+    transition: 0.25s ease;
+    border-radius: 4px;
+}
+
+.feature-card > i {
+    font-size: 2.7rem;
+    color: orange;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 1.35rem;
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    color: muted;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.feature-card:hover {
+    background: orange;
+    transform: translateY(-4px);
+}
+
+.feature-card:hover > i,
+.feature-card:hover p {
+    color: #fff;
+}
+
+.service-card {
+    border: 1px solid #f1f1f1;
+}
+
+.food-collage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 180px 180px;
+    gap: 16px;
+    align-items: stretch;
+    max-width: 540px;
+    width: 100%;
+    margin-inline: auto;
+}
+
+.food-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+.food-img-one {
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 25px;
+    height: calc(100% - 25px);
+}
+
+.food-img-two {
+    grid-column: 2;
+    grid-row: 1;
+    width: 82%;
+    height: 82%;
+    justify-self: end;
+    align-self: start;
+}
+
+.food-img-three {
+    grid-column: 2;
+    grid-row: 2;
+    width: 82%;
+    height: 82%;
+    align-self: end;
+}
+
+.stat-box {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-height: 85px;
+    border-left: 5px solid orange;
+    padding-left: 15px;
+}
+
+.stat-box strong {
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    color: orange;
+    line-height: 1;
+}
+
+.stat-box span {
+    color: muted;
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+
+.chef-card {
+    height: 100%;
+    text-align: center;
+    background: #fff;
+    padding: 20px 16px;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px #20264212;
+}
+
+.chef-card img {
+    width: 100%;
+    max-width: 260px;
+    height: 245px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.chef-card h3 {
+    font-size: 1.25rem;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.chef-card p {
+    color: muted;
+    margin: 0;
+}
+
+.page-banner {
+    color: #fff;
+    padding: 70px 0;
+    background:
+        url("banner.jpg") center/cover no-repeat;
+}
+
+.page-banner h1 {
+    font-size: clamp(2.4rem, 5vw, 3.7rem);
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.page-banner p {
+    margin: 0;
+    color: #fff;
+}
+
+.page-banner a {
+    color: orange;
+    text-decoration: none;
+}
+
+.page-banner a:hover {
+    color: #fff;
+}
+
+.page-banner span {
+    padding: 0 10px;
+    color: #ddd;
+}
+
+.contact-item {
+    height: 100%;
+    padding: 20px;
+    border-left: 4px solid orange;
+    box-shadow: 0 3px 18px #0000000c;
+    overflow-wrap: anywhere;
+}
+
+.contact-item h3 {
+    font-family: "Pacifico", cursive;
+    color:orange;
+    font-size: 1.35rem;
+    margin-bottom: 15px;
+}
+
+.contact-item p {
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+.contact-item i {
+    color: var(--orange);
+    margin-right: 8px;
+}
+
+
+.contact-panel {
+    box-shadow: 0 8px 35px #20264215;
+    background: #fff;
+}
+
+.map-frame {
+    height: 100%;
+    min-height: 480px;
+}
+
+.map-frame iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 480px;
+    border: 0;
+    display: block;
+}
+
+
+.booking-form {
+    padding: clamp(22px, 4vw, 45px);
+}
+
+.booking-form .form-label {
+    color: orange-dark;
+    font-weight: 800;
+}
+
+.booking-form .form-control {
+    border-radius: 2px;
+    padding: 13px 14px;
+}
+
+.booking-form .form-control:focus {
+    border-color:orange;
+    box-shadow: 0 0 0 0.2rem #f39c1230;
+}
+
+
+.site-footer {
+    background:#12121e;
+    color:white;
+}
+
+.footer-title {
+    color:orange;
+    font-family: "Pacifico", cursive;
+    font-size: 1.35rem;
+    margin-bottom: 22px;
+}
+
+.footer-title span {
+    font-family: sans-serif;
+    font-weight: 900;
+}
+
+.site-footer a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.site-footer a:hover {
+    color:orange;
+}
+
+.site-footer p {
+    color: #f3f3f3;
+    line-height: 1.7;
+    margin-bottom: 10px;
+    overflow-wrap: anywhere;
+}
+
+.footer-line {
+    border-color: #ffffff40;
+    margin: 30px 0 20px;
+}
+
+.newsletter-form {
+    display: flex;
+    background: #fff;
+    padding: 5px;
+}
+
+.newsletter-form input {
+    width: 100%;
+    min-width: 0;
+    border: 0;
+    padding: 10px;
+    outline: 0;
+}
+
+.newsletter-form button {
+    flex: 0 0 44px;
+    border: 0;
+    background:orange;
+    color: #fff;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    transition: 0.3s ease;
+}
+.v{
+    background-color:#212529;
+    flex-direction:column;
+}
+
+
+
+
+@media (max-width: 1000px) {
+
+    
+    .site-nav .navbar-nav {
+        align-items: stretch !important;
+        padding-top: 12px;
+    }
+
+    .site-nav .nav-link {
+        padding: 10px 0 !important;
+    }
+
+    .site-nav .nav-item.ms-lg-3 {
+        margin: 8px 0 4px;
+    }
+
+    
+    .hero-section {
+        text-align: center;
+    }
+
+    .hero-copy {
+        margin-inline: auto;
+    }
+
+    .hero-section p:not(.eyebrow) {
+        margin-inline: auto;
+    }
+
+    .hero-food {
+        width: min(78%, 390px);
+        margin-top: 12px;
+    }
+
+    .food-collage {
+        max-width: 500px;
+    }
+
+    .map-frame,
+    .map-frame iframe {
+        min-height: 380px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .section-space {
+        padding: 48px 0;
+    }
+
+    .hero-section {
+        min-height: auto;
+        padding: 55px 0;
+    }
+
+    .hero-section h1 {
+        font-size: clamp(2.4rem, 12vw, 3.5rem);
+    }
+
+    .hero-section p:not(.eyebrow) {
+        font-size: 1rem;
+    }
+
+    .hero-food {
+        width: min(88%, 320px);
+    }
+
+    .food-collage {
+        grid-template-rows: 135px 135px;
+        gap: 10px;
+    }
+
+    .food-img-one {
+        margin-top: 18px;
+        height: calc(100% - 18px);
+    }
+
+    .stat-box {
+        gap: 8px;
+        padding-left: 9px;
+    }
+
+    .stat-box strong {
+        font-size: 2.4rem;
+    }
+
+    .stat-box span {
+        font-size: 0.8rem;
+    }
+
+    .chef-card img {
+        height: 220px;
+    }
+
+    .page-banner {
+        padding: 48px 0;
+    }
+
+    .map-frame,
+    .map-frame iframe {
+        min-height: 320px;
+    }
+
+    .booking-form {
+        padding: 24px 18px;
+    }
+
+    .footer-title {
+        margin-bottom: 14px;
+    }
+}
+
+@media(max-width:800px)
+{
+    .vadivelvideo{
+    width:180px;
+    height:280px;
+   }
+}
